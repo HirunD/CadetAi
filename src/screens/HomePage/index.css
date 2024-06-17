@@ -1,0 +1,98 @@
+/* HTML: <div class="loader"></div> */
+.loader2 {
+  display: none;
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#ffffff 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
+
+body{
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+.is-white{
+  color: white;
+}
+
+.glass{
+  margin-top: 10px;
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.glass p ul{
+  margin: 15px;
+  margin-left: 50px;
+}
+
+.input{
+  background: rgba( 255, 255, 255, 0.55 )!important;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )!important;
+backdrop-filter: blur( 8.5px )!important;
+-webkit-backdrop-filter: blur( 8.5px )!important;
+border-radius: 10px!important;
+border: 1px solid rgba( 255, 255, 255, 0.18 )!important;
+color: rgb(0, 0, 0)!important;
+font-weight: 500;
+}
+
+.title{
+  color: white !important;
+}
+
+#content {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  white-space: pre-wrap; /* Preserve whitespace formatting */
+}
+.typing-cursor {
+  border-right: 2px solid rgb(255, 255, 255);
+  display: inline;
+  animation: blink 0.7s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+a{
+  color: rgb(172, 134, 255)!important;
+}
+
+.glass-btn{
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1) !important;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8) !important;
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+
+.glass-btn:hover{
+  transform: scale(101%);
+}
