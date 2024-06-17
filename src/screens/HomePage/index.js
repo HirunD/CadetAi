@@ -166,6 +166,9 @@ function CadetAssistant() {
         </div>
         <p className="para content is-white" id="chat"></p>
       </div>
+      <div class="notification is-danger">
+  The free version of the AI only allows you to ask <strong>15 questions per minute</strong>. Carefull when you are using the quota
+</div>
     </div>
   );
 }
