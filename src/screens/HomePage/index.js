@@ -9,7 +9,7 @@ import "./index.css";
 function CadetAssistant() {
   // Access your API key as an environment variable (see "Set up your API key" above)
   const genAI = new GoogleGenerativeAI(
-    "AIzaSyA2CeTxTa-CCFeyR2r4yXOzCI58lmkNmek"
+    process.env.REACT_APP_GOOGLE_API_KEY
   );
 
   const model = genAI.getGenerativeModel({
@@ -152,7 +152,7 @@ function CadetAssistant() {
         </div>
 
         <div class="control">
-          <button class="button glass-btn" onClick={typeWriter}>
+          <button class="button glass-btn" onClick={Chat}>
             Submit
           </button>
         </div>
